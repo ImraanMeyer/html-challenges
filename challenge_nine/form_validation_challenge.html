@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style tag open -->
+    <style media="screen">
+      /* aligning all h1 to center */
+      h1 {
+        text-align: center;
+      }
+      /* all span text to floar right */
+      span {
+        float:  right;
+      }
+      /* selectin 'submit' class */
+      .submit {
+        text-align: center;
+      }
+      
+      /* alignt 'about' text to the top */
+      .about {
+          vertical-align: top;
+      }
+
+    </style>
+    <!-- style tag closed -->
+
+</head>
+
+
+<body>
+    <!-- added h1 for main header -->
+    <h1>Registration Form</h1>
+
+    <!-- opening form tag -->
+    <form action="post">
+    <!-- opened table within form aligned to center-->
+    <table align="center">
+        <!-- table body -->
+        <tbody>
+          <!-- table row -->
+          <tr>
+            <!-- table data with span tags -->
+            <td ><span> User id:</span></td>
+            <td> 
+              <!-- input text value for id with required input -->
+              <input type="text" size="8px" required minlength="5" maxlength="12" placeholder="Required">
+            </td>
+          </tr>
+          <!-- clsoing table row -->
+
+          <!-- table row -->
+          <tr>
+            <!-- table data  added required pass field-->
+            <td> <span>Password:</span>  </td>
+            <td><input type="password" size="8px" minlength="7" maxlength="12" placeholder="Required"></td>
+          </tr>
+
+          <tr>
+            <!-- table data name with alphabets only -->
+            <td><span>Name:</span></td>
+            <td>
+              <input type="text" name="fname" required placeholder="Alphabets only" pattern="[A-Za-A-A-Za-A-A-Za-A-A-Za-A-Za-A-Za]{7}">
+            </td>
+          </tr>
+
+          <tr>
+            <!-- table data with address optional -->
+            <td><span>Address:</span></td>
+            <td><input type="text" placeholder="Optional"> </td>
+          </tr>
+
+          <tr>
+            <!-- table data -->
+            <td><span>Country:</span></td>
+            <td>
+                <!-- selection drop down menus for countries, width adjusted -->
+                <select width="20px" required>
+                  <option value="">(Please select a country) </option>
+                  <option value="canada">Canada</option>
+                  <option value="south-africa">South Africa</option>
+                  <option value="brazil">Brazil</option>
+                  <option value="china">China</option>
+                </select>
+            </td>
+          </tr>
+
+          <tr>
+            <!-- td  zip code required  -->
+            <td><span>ZIP Code:</span></td>
+            <td><input type="text" placeholder="Required" required pattern="[0-9]{4}"></td>
+          </tr>
+
+          <tr>
+            <!-- td required email addres -->
+            <td><span>Email:</span></td>
+            <td><input type="email" name="" value="" placeholder="youremail@example.com"> </td>
+          </tr>
+
+          <tr>
+            <!-- table data -->
+            <td><span>Sex:</span></td>
+            <td>
+              <!-- inserted radio buttons -->
+              <input type="radio" name="sex">Male 
+              <input type="radio" name="sex">Female
+            </td>
+          </tr>
+
+          <tr>
+            <!-- table data language -->
+            <td><span>Language:</span></td>
+            <td>
+              <!-- inserted check boxes inline -->
+              <input type="checkbox" name="language" value="">English
+              <input type="checkbox" name="language" value="">Non-English
+            </td>
+          </tr>
+
+          <tr>
+            <!-- table data about sections -->
+            <!-- created a class for about section -->
+            <td class="about"><span>About:</span></td>
+            <!-- text area for client to fill in comments -->
+            <td><textarea name="name" rows="10" cols="25"></textarea></td>
+          </tr>
+
+        </tbody>
+        <!-- closing table body -->
+    </table>
+    <!-- closing table inside for -->
+
+        <!-- inserted submit button in a class -->
+        <div class="submit">
+            <!-- insert subit buton -->
+            <input type="submit" name="" value="Submit">
+        </div>
+
+    </form>
+    <!-- closing off form -->
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nested Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+</head>
+
+<body>
+    <!-- inserted h1 tag as header for first section -->
+    <h1>Nested Tables</h1>
+    <!-- opening table tag, added border to the tbale of 1px -->
+    <table border="1">
+        <!-- table head -->
+        <thead>
+            <!-- table row -->
+            <tr>
+                <!-- table data -->
+                <td>1</td>
+                <td>2</td> 
+            </tr>
+            <!-- closing table row -->
+        </thead>
+        <!-- closing table head -->
+
+        <!-- opening table body tag -->
+        <tbody>
+            <!-- table row -->
+            <tr>
+                <!-- table data -->
+                <td>3</td>    
+                <td>
+                    <!-- table inserted with in table data, added border of 1 px -->
+                    <table border="1px">
+                        <!-- table row for new table -->
+                        <tr>
+                            <!-- table data -->
+                            <td>
+                                <!-- third table inserted within second table data added border of 1px -->
+                                <table border="1px">
+                                    <!-- table row -->
+                                    <tr>
+                                        <!-- table data -->
+                                        <td>4</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <!-- closing first table row -->
+                                    <!-- opening new table row -->
+                                    <tr>
+                                        <!-- table data -->
+                                        <td>7</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <!-- closing table row -->
+                                </table>
+                                <!-- closing third table -->
+                            </td>
+                            <!-- closig table data of second table -->
+                            <!-- table data -->
+                            <td>6</td>
+                        </tr>
+                        <!-- closing table row -->
+
+                        <!-- table row -->
+                        <tr>
+                            <!-- table data -->
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <!-- closing table row -->
+                    </table>
+                    <!-- closing second table with tag -->
+                </td>
+                <!-- closing second data tag made in first row -->
+            </tr>
+            <!-- closing table row of first table -->
+    </table>
+    <!-- closing main table tag -->
+
+    <!-- h1 added for next section -->
+    <h1>Manipulation Tables</h1>
+
+    <!-- opened table tag and adjusted width height and border -->
+    <table width="200" border="1px" height="200">
+        <!-- opening table body -->
+        <tbody>
+            <!-- table row -->
+            <tr>
+                <!-- table data -->
+                <td>1</td>
+                <!-- table data, adjusted coloum span to 3 spaces -->
+                <td colspan="3">2</td>
+            </tr>
+            <!-- closing table row -->
+
+            <!-- opening table row -->
+            <tr>
+                <!-- table data adjusting row span to 3 spaces -->
+                <td rowspan="3">3</td>
+                <td>4</td>
+                <td>5</td>
+                <!-- table data adjusting row span to 2 spaces -->
+                <td rowspan="2">6</td>
+            </tr>
+            <!-- closing table row -->
+
+            <!-- opening table row -->
+            <tr>
+                <!-- table data -->
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <!-- closing table row -->
+
+            <!-- opening table row -->
+            <tr>
+                <!-- table data adjusting coloum span to 2 spaces -->
+                <td colspan="2">9</td>
+                <td>10</td>
+            </tr>
+            <!-- closing table row -->
+        </tbody>
+        <!-- closing table body -->
+    </table>
+    <!-- closing table tag -->
+</body>
+
+
+
+</html>
