@@ -8,7 +8,7 @@
 
 ## Live Link
 
-- https://imraanmeyer.github.io/challenge_one/html_challenges/index.html
+- https://imraanmeyer.github.io/html-challenges/index.html
 
 ## Prevalent Technologies Used
 
